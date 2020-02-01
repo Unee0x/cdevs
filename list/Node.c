@@ -32,7 +32,7 @@ void delete_list( Node_t head ){
 
 	while( h != NULL ){
 		t = h->link;
-		fprintf( stderr, " Now Freeing address %p\n", h );
+		fprintf( stdout, " Address %p is being freed.\n", h );
 		free( h );
 		h = t;
 	}	
